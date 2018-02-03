@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDeepOrange"
+    tools:context="com.itechbd.navigationdrawer.fragments.HomeFragment">
+
+   <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/home">
+       <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:typeface="sans"
+    android:id="@+id/home_head"
+    android:textSize="20dp"
+    android:textStyle="bold|italic"
+    android:text="@string/home_head"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:typeface="sans"
+          android:textSize="20dp"
+          android:id="@+id/nav_main"
+          android:textStyle="bold|italic"
+          android:layout_below="@id/home_head"
+          android:text="@string/home_quote"/>
+</RelativeLayout>
+   </android.support.v7.widget.CardView>
+</LinearLayout>
